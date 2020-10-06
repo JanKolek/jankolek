@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jan Kolek</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/j.png" type="image/x-icon" />
+</head>
+<body>
+
+<div id = "header">
+    <img src="media/header.jpg" id = "headerImage">
+    <h1>Jan Kolek</h1>
+    <hr>
+    <h2>personal website</h2>
+</div>
+
+<div id="about" >
+    <h1>About me</h1>
+    <hr>
+    <img src ="media/me.jpg" id = "me">
+    <div class = "sport">
+        Sport is one of my hobbies and I play ultimate frisbee...What is ultimate frisbee?
+    </div>
+    <p id = "text">I am Czech student from Prague and I am at IT-focused high school.<br>
+        I am focused on game development in Unity and web development.<br>
+        I know C# and .NET framework, C/C++ oop programming, Python <br>and HTML/CSS.
+    </p>
+    <p id = "skola">My school:</p>
+    <iframe id  = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.3299299092423!2d14.500631315948711!3d50.080109421860826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b931866ed0141%3A0xadbfc677e150daec!2zU3TFmWVkbsOtIHByxa9teXNsb3bDoSDFoWtvbGEgZWxla3Ryb3RlY2huaWNrw6EsIFByYWhhIDEwLCBWIMOaxb5sYWJpbsSbIDMyMA!5e0!3m2!1scs!2scz!4v1601979096830!5m2!1scs!2scz" width="600" height="450" frameborder="2px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    <embed id="web" src="http://www.losquijotes.es/en/what-ultimate-frisbee">
+</div>
+
+
+
+<div id="abilities">
+
+    <h1>Abilities</h1>
+    <hr>
+<br>
+    <p>HTML/CSS<span class = "full"> ★★★</span><span class = "empty">★★</span></p>
+    <p>C/C++<span class = "full"> ★★</span><span class = "empty">★★★</span></p>
+    <p>Unity<span class = "full"> ★★★★</span><span class = "empty">★</span>  </p>
+    <p> Python<span class = "full">★</span><span class = "empty">★★★★</span></p>
+    <p>C#<span class = "full"> ★★</span><span class = "empty">★★★</span></p>
+
+    <div id = "footer">
+   <a href = "https://www.facebook.com/profile.php?id=100008846943044"><img id = "fb" src="media/fb.png"></a>
+        <a href = "https://www.instagram.com/honzakolek03/?hl=cs">  <img id = "ig" src="media/ig.png"></a>>
+    </div>
+
+</div>
+
+
+<div id = "menu">
+    <a href="#header"  class="btn">Home</a><br/>
+    <a  href="#about" class="btn">About me</a><br/>
+    <a  href="#abilities" class="btn">Abilities</a><br/>
+</div>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    window.onload = function(){start()};
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+
+        document.getElementById("headerImage").style.top = (-scrolled  * 10) + "px";
+
+
+    }
+    function start()
+    {
+        document.body.scrollTop =0;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+*
+{
+    font-family:  'Open Sans';
+    scroll-behavior: smooth;
+
+}
+html {
+    scroll-behavior: smooth;
+
+}
+
+
+#header h1
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 100px;
+    margin: 0;
+    padding-top: 15%;
+
+}
+#header h2
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 30px;
+    margin: 0;
+
+}
+#header hr
+{
+    alignment: center;
+    width: 30%;
+    height: 1px;
+    border: 0;
+    background-color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#headerImage
+{
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    position: fixed;
+    left: 0;
+    top: 0px;
+    object-fit: cover;
+    filter: brightness(70%);
+    overflow: hidden;
+
+}
+#header
+{
+    color: white;
+    width:100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+#about
+{
+
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    right: 25px;
+    top: 60px
+
+
+}
+#about h1 {
+    font-size: 50px;
+    font-weight: lighter;
+    text-align: center;
+    position: relative;
+    padding-top: 70px;
+}
+#about hr
+{
+    position: relative;
+    alignment: center;
+    width: 15%;
+    height: 1px;
+    border: 0;
+    background-color: #000000;
+    margin-top: 0;
+    bottom: 30px;
+}
+#about p
+{
+    position: relative;
+    left: 300px;
+    bottom: 200px;
+    width: 50vw;
+}
+#me
+{
+    width: 10%;
+    height: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    border-radius: 100px;
+}
+#map
+{
+    padding: 2px;
+    border-radius: 10px;
+    border: 1px solid #a0a0a0;
+    position: absolute;
+    left: 250px;
+    bottom: 100px;
+}
+#skola
+{
+
+    position: relative;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    width: 5%;
+    height: 5%;
+
+}
+
+#text
+{
+    width: 10%;
+    height: 10%;
+}
+.sport
+{
+    position: relative;
+    left: 58%;
+    bottom: 14%;
+    padding: 0;
+    margin: 0;
+    width: 350px;
+    height: 50px;
+
+}
+#web
+{
+    position: absolute;
+    left: 55%;
+    bottom: 10%;
+    width:600px;
+    height: 450px;
+    padding:2px;
+    border: 1px solid #a0a0a0;
+    border-radius: 10px;
+}
+
+#abilities
+{
+
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    right: 25px;
+    top: 25px;
+    background-color: #fcfcfc;
+
+
+}
+#abilities h1 {
+    font-size: 50px;
+    font-weight: lighter;
+    text-align: center;
+    position: relative;
+    padding-top: 70px;
+}
+#abilities hr
+{
+    position: relative;
+    alignment: center;
+    width: 15%;
+    height: 1px;
+    border: 0;
+    background-color: #000000;
+    margin-top: 0;
+    bottom: 30px;
+}
+.full
+{
+    color: #dbdb62;
+    -webkit-text-stroke: 1px #dbdb62;
+}
+.empty
+{
+    color: transparent;
+    -webkit-text-stroke: 1px #dbdb62;
+}
+#abilities p{
+    position: relative;
+    text-align: right;
+    right: 43%;
+    font-size: 190%;
+}
+
+#footer
+{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+
+}
+#fb
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 45%;
+    top: 30%;
+
+
+}
+#ig
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 55%;
+    top: 30%;
+
+}
+
+#menu
+{
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 45%;
+    left: 90%;
+    width: 7%;
+    height: 18%;
+    color: #ffffff;
+    border-radius: 10%;
+}
+.btn
+{
+    display: inline-block;
+    color: #ffffff;
+    background-color: transparent;
+    padding: 5px;
+    border: 1px solid #ffffff;
+    margin-top: 5%;
+    text-decoration: none;
+    font-size: 150%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    left: 5%;
+    top: 1px;
+
+}
+.btn::before
+{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 0%;
+    background-color: #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+.btn:hover
+{
+    color: black;
+}
+.btn:hover::before
+{
+    height: 200%;
+    border-radius: 100% 100% 0% 0%;
+}
+
